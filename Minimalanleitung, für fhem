@@ -1,0 +1,12 @@
+Anleitung:
+Anlage neues Device:
+- senden per mqtt: "set mqttBroker publish cmnd/instatgw_B24354/1234/set ON" => erzeugt neues virtuelles Device und sendet Funktelegramm
+- Status des Device toggeln auf der Webpage => sendet Statusänderung per mqtt und Funk => Anlage neues Device "1234" in fhem, inklusive logfile
+
+set mqttBroker publish cmnd/instatgw_B24354/1234/set Learn (LEARN/learn)
+set mqttBroker publish cmnd/instatgw_B24354/1234/set Reset (RESET/reset)
+set mqttBroker publish cmnd/instatgw_B24354/1234/set On (ON/on)
+set mqttBroker publish cmnd/instatgw_B24354/1234/set Off (OFF/off)
+
+wichtig:
+Gateway leitet nur weiter, sprich die alle 10 Minuten erwartete Aktualisierung des Status muss fhem machen
