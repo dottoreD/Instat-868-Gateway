@@ -6,3 +6,5 @@ minimal invasive Implementierung um über MQTT die Instat Einzelraumsteuerung an
 Hardware: 
 - Gateway
 - Funk-Temperatursensoren & CUL wenn Raumtemperatur nicht anderweitig verfügbar ist
+
+![Ansicht Hauptmenü](https://github.com/dottoreD/Instat-868-Gateway/blob/main/Hauptmen%C3%BC.png)
